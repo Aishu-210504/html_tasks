@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .login-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .remember-me {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .remember-me input {
+            margin-right: 10px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(221, 219, 218);
+        }
+        
+        .cancel-btn {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .forgot-password {
+            color: #121212;
+            text-decoration: none;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="form-group">
+            <img src="https://st3.depositphotos.com/14846838/19541/v/450/depositphotos_195416788-stock-illustration-young-college-girl-uniform-depicting.jpg" alt="Description" style="display: block; margin: 0 auto;" height="100" width="100">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter Username">
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Password">
+        </div>
+        
+        <button class="login-btn">Login</button>
+        
+        <div class="remember-me">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+        </div>
+        
+        <div class="footer-links">
+            <button class="cancel-btn">Cancel</button>
+            <a href="#" class="forgot-password">Forgot password?</a>
+        </div>
+    </div>
+</body>
+</html>

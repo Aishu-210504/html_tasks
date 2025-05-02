@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vertical Navigation Bar</title>
+    <style>
+        body {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            
+        }
+        
+        .vertical-nav {
+            width: 200px;
+            background-color: #f8f9fa;
+            height: 100vh;
+            padding: 20px 0;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        
+        .nav-header {
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+        
+        .nav-item {
+            background-color: aqua;
+            padding: 12px 20px;
+            color: blue;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-item:hover {
+            background-color: orange;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="vertical-nav">
+        <div class="nav-header">Vertical Navigation Bar</div>
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">Java</a>
+        <a href="#" class="nav-item">CSS</a>
+        <a href="#" class="nav-item">HTML</a>
+        <a href="#" class="nav-item">Bootstrap</a>
+    </nav>
+    
+    <!-- Page content would go here -->
+    <main style="flex-grow: 1; padding: 20px;">
+        <!-- Your page content -->
+    </main>
+</body>
+</html>

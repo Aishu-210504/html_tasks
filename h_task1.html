@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Green Table with Spacing</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: separate; /* Allows cell spacing */
+            border-spacing: 2px; /* Spacing between cells */
+        }
+        th, td {
+            border: 1px solid #22afb1; /* Green border */
+            padding: 12px; /* Inner padding */
+            text-align: left;
+        }
+        th {
+            background-color: #22afb1; /* Green header */
+            color: black;
+        }
+        tr {
+            background-color: #22afb1; /* Light green alternate rows */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

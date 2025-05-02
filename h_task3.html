@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #0e219a;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            vertical-align: middle;
+        }
+        td:first-child {
+            width: 30%;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .radio-group {
+            display: flex;
+            gap: 20px;
+        }
+        .checkbox-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .declaration {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .login-row {
+            text-align: right;
+            border: none;
+            padding-top: 15px;
+            
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        button {
+            padding: 10px 25px;
+            background-color: #a9afa9;
+            color: black;
+            border: 1px solid black; /* Added black border */
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            min-height: 100px;
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration form</h1>
+
+    <table>
+        <tr>
+            <td>First Name</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td>Re-enter Password</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender"> Male</label>
+                    
+                </div>
+                <hr>
+                <div class="radio-group">
+                    
+                    <label><input type="radio" name="gender"> Female</label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Age:</td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td>Phone Number</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><textarea></textarea></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>State</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td>
+                <select>
+                    <option>Choose your country </option>
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Languages known</td>
+            <td>
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> English</label>
+                    <label><input type="checkbox"> Kannada</label>
+                    <label><input type="checkbox"> Hindi</label>
+                    <label><input type="checkbox"> Telugu</label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> Hereby I declare all the given details are true
+                    </label>
+                </div>
+            </td>
+        </tr>
+    
+        <tr>
+            <td colspan="2">
+                <div class="login-row">
+                    <p>Log in to <a href="https://www.m.acharya.ac.in/">Acharya </a>website</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <div class="buttons">
+        <button>Register</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lists and Links Example</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            width: fit-content;
+            background-color: #f9f9f9;
+        }
+        .links-box {
+            border: 1px solid #595757;
+            padding: 15px;
+            width: fit-content;
+            background-color: #ede8e8;
+        }
+        ul {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        li {
+            margin-bottom: 3px;
+        }
+        a {
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Lists can be nested (list inside list):</p>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea
+                <ul>
+                    <li>Black tea</li>
+                    <li>Green tea</li>
+                </ul>
+            </li>
+            <li>Milk</li>
+        </ul>
+    </div>
+
+    <div class="links-box">
+        <p>Click any of the following links</p>
+        <p>
+            <a href="https://example.com" target="_blank">Opens in New</a> |
+            <a href="https://example.com" target="_self">Opens in Self</a> |
+            <a href="https://example.com" target="_parent">Opens in Parent</a> |
+            <a href="https://example.com" target="_top">Opens in Body</a>
+        </p>
+    </div>
+</body>
+</html>

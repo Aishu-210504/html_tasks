@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+body {
+    color:#5f2a95;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    background-color: #d0d060;
+  }
+  
+  .container {
+    display: flex;
+    padding: 1em;
+  }
+  
+  .sidebar {
+    width: 200px;
+    margin-right: 2em;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    display: block;
+    background-color: white;
+    color: #341bda;
+    text-decoration: none;
+    padding: 5px;
+    border-right: 20px solid black;
+    font-size: 1.1em;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  h1 {
+    color: #7737b7;
+    font-size: 2em;
+  }
+  
+  .signature {
+    font-style: italic;
+  }
+  
+</style>
+
+<head>
+  <meta charset="utf-8">
+  <title>My first styled page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="sidebar">
+      <ul>
+        <li><a href="#">Home page</a></li>
+        <li><a href="#">Musings</a></li>
+        <li><a href="#">My town</a></li>
+        <li><a href="#">Links</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h1>My first styled page</h1>
+      <p>Welcome to my styled page!</p>
+
+      <p>It lacks images, but at least it has style. And it has links, even if they don't go anywhere...</p>
+
+      <p>There should be more here, but I don't know what yet.</p>
+
+      <hr>
+
+      <p class="signature"><em>Made 5 April 2004<br>by myself.</em></p>
+    </div>
+  </div>
+
+</body>
+</html>
